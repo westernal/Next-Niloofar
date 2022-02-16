@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Logo from "../../public/Images/logo.svg"
-import {Link} from "next/link"
+import Link from "next/link"
 import lift2 from "../../public/Images/lift/IMG_0066.jpg"
 import lift3 from "../../public/Images/lift/IMG_0069.jpg"
 import lift4 from "../../public/Images/lift/IMG_9979.jpg"

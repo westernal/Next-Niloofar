@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Logo from "../../public/Images/logo.svg"
-import {Link} from "next/link"
+import Link from "next/link"
 import nose from "../../public/Images/nose/download.jpg"
 import nose2 from "../../public/Images/nose/IMG_9269.jpg"
 import nose3 from "../../public/Images/nose/IMG_9274.jpg"
@@ -17,7 +17,7 @@ const Service7 = () => {
             
             <Header />
             <Head>
-    <title>اصلاح فرم بینی - کلینیک زیبایی نیلوفر'</title>
+    <title>اصلاح فرم بینی - کلینیک زیبایی نیلوفر</title>
         </Head>
                 <div className="serv-header">
             <div className="st-title">

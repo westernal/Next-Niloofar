@@ -1,12 +1,11 @@
 import React from 'react';
 import Header from '../../components/Header';
-import RArrow from "../../public/Images/Arrow---Right.svg"
-import Link from "next/link"
+import Link from "next/link";
 import PWAFooter from '../../components/PWAFooter';
 import AdminNav from '../../components/AdminNav';
 import { useEffect } from 'react';
 import { useRouter } from 'next/dist/client/router';
-import Head from 'next/head'
+import Head from 'next/head';
 
 
 
@@ -15,12 +14,14 @@ const Dashboard22 = () => {
   
   let history = useRouter();
 
-  if (localStorage.getItem("token") == "" || localStorage.getItem("token") == undefined) {
-      history.push("/")
-  }
+
 
  
   useEffect(() => {
+
+    if (localStorage.getItem("token") == "" || localStorage.getItem("token") == undefined) {
+        history.push("/")
+    }
 
     var requestOptions = {
         method: 'GET',
@@ -74,10 +75,9 @@ const Dashboard22 = () => {
             <Head>
     <title>کاربران - کلینیک زیبایی نیلوفر</title>
         </Head>
-            <Link href="/admin-dash/dashboard2"><a>
-            <div className="back-sec" id='dbs'>
+            <Link href="/admin-dash/dashboard2"><a> <div className="back-sec" id='dbs'>
             <p>  فرم پرسشنامه پذیرش کلاینت</p>
-                <img src={RArrow} alt="right arrow" />
+                <img src="/Images/Arrow---Right.svg" alt="right arrow" />
                 
         </div>
         </a></Link>
@@ -97,8 +97,7 @@ const Dashboard22 = () => {
 <div className="questions2" >
 
 </div>
-{/* questions2 ends */}
-                {/* questions1 ends */}
+
                
                    </div>
              <AdminNav />
@@ -109,5 +108,5 @@ const Dashboard22 = () => {
      );
 }
  
-export default Dashboard22;
+export default Dashboard22
 

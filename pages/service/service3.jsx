@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Logo from "../../public/Images/logo.svg"
-import {Link} from "next/link"
+import Link from "next/link"
 import filler from "../../public/Images/filler/IMG_9271.jpg"
 import filler1 from "../../public/Images/filler/IMG_9272.jpg"
 import filler2 from "../../public/Images/filler/IMG_9273.jpg"

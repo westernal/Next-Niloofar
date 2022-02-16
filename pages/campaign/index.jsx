@@ -2,7 +2,6 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import rec76 from "../../public/Images/Rectangle 76.svg"
-import video from "./Videos/Campaign.mp4"
 import g218 from "../../public/Images/Group 218.png"
 import g2 from "../../public/Images/Group (2).svg"
 import loc from "../../public/Images/Location.svg"
@@ -161,7 +160,7 @@ function openModal4(params) {
 
 <div className="modal-main2">
     <p>        <video width="300" height="300" controls>
-  <source src={video} type="video/mp4" />
+  <source src="/Videos/Campaign.mp4" type="video/mp4" />
 
 Your browser does not support the video tag.
 </video></p>

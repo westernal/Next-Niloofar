@@ -236,7 +236,7 @@ const User = () => {
 
  <h3> ویرایش</h3>
  <div className="new-forms">
- <input type="text" placeholder="مبلغ پرداخت شده" id="ufname2" placeholder={posts && posts.sessions && posts.sessions[0] && posts.sessions[index].price} />
+ <input type="text"  id="ufname2" placeholder={posts && posts.sessions && posts.sessions[0] && posts.sessions[index].price} />
  <select name="session" id="session2">
  <option value="0"  >جلسه</option>
      <option value="1">1</option>
@@ -282,7 +282,7 @@ const User = () => {
                      {!status &&  <p id="usit3">ناقص</p>}
                             <p id="uid">وضعیت:</p>
                         </div>
-                        <Link href="/admin-dash/dashboard22"><a><p>{">"}</p> مشاهده فرم </a></Link>
+                        <Link href="/admin-dash/dashboard22"><a> <p>{">"}</p> مشاهده فرم </a></Link>
                     </div>
                     <div className="uf-survey">
                         <h4>فرم نظرسنجی</h4>
@@ -291,7 +291,7 @@ const User = () => {
                      {!status &&  <p id="usit3">ناقص</p>}
                             <p id="uid">وضعیت:</p>
                         </div>
-                        <Link href="/admin-dash/dashboard21"><a ><p>{">"}</p> مشاهده فرم </a></Link>
+                        <Link href="/admin-dash/dashboard21"><a > <p>{">"}</p> مشاهده فرم </a></Link>
                     </div>
                 </div>
                 <div className="user-info">

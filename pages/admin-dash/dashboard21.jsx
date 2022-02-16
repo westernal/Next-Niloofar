@@ -3,7 +3,6 @@ import Header from '../../components/Header';
 import Link from "next/link"
 import PWAFooter from '../../components/PWAFooter';
 import AdminNav from '../../components/AdminNav';
-import RArrow from "../../public/Images/Arrow---Right.svg"
 import { useEffect } from 'react';
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head'
@@ -13,11 +12,12 @@ const Dashboard21 = () => {
  
   let history = useRouter();
 
-  if (localStorage.getItem("token") == "" || localStorage.getItem("token") == undefined) {
-      history.push("/")
-  }
+ 
 
   useEffect(() => {
+    if (localStorage.getItem("token") == "" || localStorage.getItem("token") == undefined) {
+        history.push("/")
+    }
 
     var requestOptions = {
         method: 'GET',
@@ -76,10 +76,9 @@ const Dashboard21 = () => {
             <Head>
     <title>کاربران - کلینیک زیبایی نیلوفر</title>
         </Head>
-            <Link href="/admindash/dashboard2"><a >
-            <div className="back-sec" id='dbs'>
+            <Link href="/admin-dash/dashboard2"><a> <div className="back-sec" id='dbs'>
             <p>  فرم نظرسنجی</p>
-                <img src={RArrow} alt="right arrow" />
+            <img src="/Images/Arrow---Right.svg" alt="right arrow" />
                 
         </div>
         </a></Link>
@@ -90,7 +89,7 @@ const Dashboard21 = () => {
                      <div className="blog-nav">
                      <div className="mp-nav">
                <ul>
-                <li><a href="#" className="wnav" id="active" onMouseEnter={hover2} onMouseLeave={endhover2} ><div className="active-"></div>فرم نظرسنجی</a></li> 
+                <li><a href="#" className="wnav" id="active" onMouseEnter={hover2} onMouseLeave={endhover2} > <div className="active-"></div>فرم نظرسنجی</a></li> 
                 
                </ul>
            </div> 
@@ -110,4 +109,4 @@ const Dashboard21 = () => {
      );
 }
  
-export default Dashboard21;
+export default Dashboard21

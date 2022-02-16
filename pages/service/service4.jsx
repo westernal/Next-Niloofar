@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Logo from "../../public/Images/logo.svg"
-import {Link} from "next/link"
+import Link from "next/link"
 import botax from "../../public/Images/botax/IMG_8714-1.jpg"
 import botax2 from "../../public/Images/botax/IMG_8716.jpg"
 import botax3 from "../../public/Images/botax/IMG_8730-1.jpg"
@@ -11,7 +11,7 @@ import Head from 'next/head'
 
 
 const Service4 = () => {
-    useDocumentTitle('    بوتاکس - کلینیک زیبایی نیلوفر');
+    
     return ( 
         <div className="service-page">
             

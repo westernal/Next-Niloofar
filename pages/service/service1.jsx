@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Logo from "../../public/Images/logo.svg"
-import {Link} from "react-router-dom"
+import Link from 'next/dist/client/link';
 import korean from "../../public/Images/korean/IMG_0746.jpg"
 import korean1 from "../../public/Images/korean/IMG_0748.jpg"
 import korean2 from "../../public/Images/korean/IMG_0752.jpg"

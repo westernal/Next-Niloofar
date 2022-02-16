@@ -10,7 +10,7 @@
   "dependencies": {
     "jalali-moment": "^3.3.10",
     "jalali-react-datepicker": "^1.2.1",
-    "next": "12.0.3",
+    "next": "^12.0.8-canary.0",
     "next-images": "^1.8.2",
     "react": "17.0.2",
     "react-countdown": "^2.3.2",

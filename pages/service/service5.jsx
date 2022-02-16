@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Logo from "../../public/Images/logo.svg"
-import {Link} from "next/link"
+import Link from "next/link"
 import meso from "../../public/Images/meso/IMG_1207.jpg"
 import meso1 from "../../public/Images/meso/IMG_1210.jpg"
 import meso2 from "../../public/Images/meso/IMG_1211.jpg"
